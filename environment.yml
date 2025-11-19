@@ -1,0 +1,25 @@
+name: s2s_taller
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+
+  # Paquetes base
+  - numpy
+  - matplotlib
+
+  # Manejo de NetCDF / GRIB
+  - xarray
+  - h5netcdf
+  - cftime
+  - cfgrib
+  - eccodes      # necesario para que cfgrib funcione bien
+
+  # Mapas
+  - cartopy
+
+  # Para instalar cosas extra por pip si hace falta
+  - pip
+  - pip:
+      - ecmwf-api-client
+
